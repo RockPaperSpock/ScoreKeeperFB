@@ -27,19 +27,19 @@ public class MainActivity extends AppCompatActivity {
         display1(score);
 
     }
-
+    //by 2
     public void increment2a(View view) {
         score = score +2;
         display1(score);
     }
-
+    //by 6
     public void increment6a(View view) {
         score = score + 6;
         Toast.makeText(this, "Touch Down!", Toast.LENGTH_SHORT).show();
         display1(score);
     }
 
-    //Decrease scores for team1
+    //Decrease scores for team1 by 1
     public void decrement(View view) {
         if(score == 0) {
             Toast.makeText(this, "You cannot have a negative score", Toast.LENGTH_SHORT).show();
@@ -57,19 +57,19 @@ public class MainActivity extends AppCompatActivity {
         display2(score2);
 
     }
-
+    //by 2
     public void increment2b(View view) {
         score2 = score2 +2;
         display2(score2);
     }
-
+    //by 6
     public void increment6b(View view) {
         score2 = score2 + 6;
         Toast.makeText(this, "Touch Down!", Toast.LENGTH_SHORT).show();
         display2(score2);
     }
 
-    //Decrease scores
+    //Decrease scores for teanm2 by 1
     public void decrement2(View view) {
         if(score2 == 0) {
             Toast.makeText(this, "You cannot have a negative score", Toast.LENGTH_SHORT).show();
@@ -89,12 +89,12 @@ public class MainActivity extends AppCompatActivity {
         display2(score2);
     }
 
-
+    //display team1 score
     private void display1(int score) {
         TextView currentScore = (TextView)findViewById(R.id.score1);
         currentScore.setText("" + score);
     }
-
+    //display team2 score
     private void display2(int score) {
         TextView currentScore = (TextView)findViewById(R.id.score2);
         currentScore.setText("" + score);
